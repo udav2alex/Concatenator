@@ -1,7 +1,7 @@
 package ru.gressor.concatenator.standard.model;
 
 public class Model {
-    private String text;
+    private String text = "";
 
     public String getText() {
         return text;
