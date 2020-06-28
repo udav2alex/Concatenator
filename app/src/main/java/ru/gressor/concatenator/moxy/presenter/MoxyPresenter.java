@@ -1,14 +1,15 @@
-package ru.gressor.concatenator.standard.presenter;
+package ru.gressor.concatenator.moxy.presenter;
 
+import moxy.InjectViewState;
+import moxy.MvpPresenter;
+import ru.gressor.concatenator.moxy.view.MoxyView;
 import ru.gressor.concatenator.standard.model.Model;
-import ru.gressor.concatenator.standard.view.MainView;
 
-public class Presenter {
-    MainView mainView;
+@InjectViewState
+public class MoxyPresenter extends MvpPresenter<MoxyView> {
     Model model;
 
-    public Presenter(MainView mainView) {
-        this.mainView = mainView;
+    public MoxyPresenter() {
         model = new Model();
     }
 
@@ -20,6 +21,6 @@ public class Presenter {
         String newText = makeNewText(model.getText(), text);
 
         model.setText(newText);
-        mainView.setTextViewText(newText);
+        getViewState().setTextViewText(newText);
     }
 }
