@@ -10,20 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".hw2.async_logger.AsyncLoggerActivity">
+        <activity android:name=".hw2.spam_sender.SpamActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".moxy.view.MoxyActivity">
+        <activity android:name=".hw2.async_logger.AsyncLoggerActivity">
+        </activity>
 
+        <activity android:name=".moxy.view.MoxyActivity">
         </activity>
 
         <activity android:name=".standard.view.MainActivity">
-
         </activity>
     </application>
 
