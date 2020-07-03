@@ -4,6 +4,6 @@
     <string name="buttonText">Concatenate it!</string>
     <string name="start_asynctask">Start AsyncTask</string>
     <string name="subscribe">Subscribe</string>
-    <string name="unsubscribe">unsubscribe</string>
+    <string name="unsubscribe">Unsubscribe</string>
     <string name="spam">spam</string>
 </resources>
