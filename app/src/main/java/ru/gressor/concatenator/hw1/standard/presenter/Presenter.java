@@ -1,7 +1,7 @@
-package ru.gressor.concatenator.standard.presenter;
+package ru.gressor.concatenator.hw1.standard.presenter;
 
-import ru.gressor.concatenator.standard.model.Model;
-import ru.gressor.concatenator.standard.view.MainView;
+import ru.gressor.concatenator.hw1.standard.model.Model;
+import ru.gressor.concatenator.hw1.standard.view.MainView;
 
 public class Presenter {
     MainView mainView;

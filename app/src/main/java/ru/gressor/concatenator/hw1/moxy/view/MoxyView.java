@@ -1,4 +1,4 @@
-package ru.gressor.concatenator.moxy.view;
+package ru.gressor.concatenator.hw1.moxy.view;
 
 import moxy.MvpView;
 import moxy.viewstate.strategy.AddToEndSingleStrategy;

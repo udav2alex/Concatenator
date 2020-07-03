@@ -23,10 +23,10 @@
         <activity android:name=".hw2.async_logger.AsyncLoggerActivity">
         </activity>
 
-        <activity android:name=".moxy.view.MoxyActivity">
+        <activity android:name=".hw1.moxy.view.MoxyActivity">
         </activity>
 
-        <activity android:name=".standard.view.MainActivity">
+        <activity android:name=".hw1.standard.view.MainActivity">
         </activity>
     </application>
 

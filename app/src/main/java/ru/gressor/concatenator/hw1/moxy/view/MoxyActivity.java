@@ -1,18 +1,20 @@
-package ru.gressor.concatenator.standard.view;
-
-import androidx.appcompat.app.AppCompatActivity;
+package ru.gressor.concatenator.hw1.moxy.view;
 
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import moxy.MvpAppCompatActivity;
+import moxy.presenter.InjectPresenter;
 import ru.gressor.concatenator.R;
-import ru.gressor.concatenator.standard.presenter.Presenter;
+import ru.gressor.concatenator.hw1.moxy.presenter.MoxyPresenter;
 
-public class MainActivity extends AppCompatActivity implements MainView {
-    Presenter presenter;
+public class MoxyActivity extends MvpAppCompatActivity implements MoxyView {
     EditText editText;
     TextView textView;
+
+    @InjectPresenter
+    MoxyPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +24,6 @@ public class MainActivity extends AppCompatActivity implements MainView {
         textView = findViewById(R.id.textView);
         editText = findViewById(R.id.editText);
 
-        presenter = new Presenter(this);
         findViewById(R.id.button).setOnClickListener((v)->processEditText());
     }
 
