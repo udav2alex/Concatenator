@@ -1,6 +1,6 @@
-package ru.gressor.concatenator.moxy.model;
+package ru.gressor.concatenator.hw1.standard.model;
 
-public class MoxyModel {
+public class Model {
     private String text = "";
 
     public String getText() {

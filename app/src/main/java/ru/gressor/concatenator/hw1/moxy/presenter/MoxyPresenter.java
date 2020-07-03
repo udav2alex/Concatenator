@@ -1,9 +1,9 @@
-package ru.gressor.concatenator.moxy.presenter;
+package ru.gressor.concatenator.hw1.moxy.presenter;
 
 import moxy.InjectViewState;
 import moxy.MvpPresenter;
-import ru.gressor.concatenator.moxy.view.MoxyView;
-import ru.gressor.concatenator.standard.model.Model;
+import ru.gressor.concatenator.hw1.moxy.view.MoxyView;
+import ru.gressor.concatenator.hw1.standard.model.Model;
 
 @InjectViewState
 public class MoxyPresenter extends MvpPresenter<MoxyView> {
